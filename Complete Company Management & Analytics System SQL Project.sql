@@ -305,14 +305,3 @@ END
 
 
 
-
-
-/*✅ Project Highlights
-
-Covers basic to advanced SQL: CRUD, joins, aggregation, window functions, CTEs.
-
-Includes real-world company scenarios: HR, projects, sales, inventory.
-
-Implements stored procedures, triggers, views, and functions.
-
-Ready to showcase in interviews with sample queries and results.*/
