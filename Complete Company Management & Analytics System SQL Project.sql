@@ -1,5 +1,6 @@
 ﻿/*Project Title: Complete Company Management & Analytics System
 
+
 Description:
 This project manages employees, departments, projects, sales, and inventory. It demonstrates basic CRUD operations, joins, aggregations, ranking, transactions, and advanced SQL concepts like triggers, stored procedures, views, and functions.
 
@@ -302,6 +303,4 @@ AS
 BEGIN
     RETURN DATEDIFF(YEAR, @HireDate, GETDATE())
 END
-
-
 
