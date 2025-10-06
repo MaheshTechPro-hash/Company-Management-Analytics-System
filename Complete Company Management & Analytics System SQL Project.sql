@@ -17,7 +17,6 @@ CREATE TABLE Departments (
 
 
 
-
 --Employees
 CREATE TABLE Employees (
     EmployeeID INT PRIMARY KEY IDENTITY(1,1),
@@ -220,7 +219,6 @@ JOIN Employees e ON s.EmployeeID = e.EmployeeID
 GROUP BY e.FirstName, e.LastName;
 
 
-
 -- High performers (salary above department average)
 WITH DeptAvg AS (
     SELECT DepartmentID, AVG(Salary) AS AvgSalary
@@ -249,6 +247,8 @@ GROUP BY e.FirstName, e.LastName, d.DepartmentName, e.Salary;
 
 
 
+
+    
 --5. Stored Procedure
 -- Add new employee
 CREATE PROCEDURE AddEmployee
