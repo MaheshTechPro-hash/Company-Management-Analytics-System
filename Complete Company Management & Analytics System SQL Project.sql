@@ -17,6 +17,7 @@ CREATE TABLE Departments (
 
 
 
+
 --Employees
 CREATE TABLE Employees (
     EmployeeID INT PRIMARY KEY IDENTITY(1,1),
@@ -31,6 +32,7 @@ CREATE TABLE Employees (
 );
 
 SELECT * FROM Employees;
+
 
 
 --Projects
@@ -163,6 +165,7 @@ SELECT * FROM Inventory;
 
 --Intermediate Queries
 -- Top 3 highest salaries in each department
+
 
 SELECT *
 FROM (
