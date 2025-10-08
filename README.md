@@ -124,7 +124,7 @@ Test and explore using SELECT statements
 🧑‍💼 Author
 
 Mahesh Palave
-📧 maheshpalave.techgmail.com
+📧 maheshpalave.tech@gmail.com
 
 🌐 [https://github.com/MaheshTechPro-hash]
 
