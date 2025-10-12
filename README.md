@@ -66,22 +66,22 @@ Sample data is inserted for all tables — departments, employees, projects, sal
 • Employees earning above department average
 
 👁️ Views
-EmployeePerformance
+ *EmployeePerformance
 
 Displays performance summary with department, salary, total sales, and project contribution.
 
 ⚙️ Stored Procedure
-AddEmployee
+  *AddEmployee
 
 Inserts a new employee record dynamically into the Employees table.
 
 🧾 Trigger
-trgSalaryChange
+  *trgSalaryChange
 
 Automatically logs every salary update in the SalaryLog table.
 
 🧠 Function
-GetTenure
+  *GetTenure
 
 Calculates the total number of years an employee has worked based on their hire date.
 
@@ -130,4 +130,4 @@ Mahesh Palave
 
 🏁 License
 
-This project is open-source and available for educational use under the MIT License.
+*This project is open-source and available for educational use under the MIT License.
