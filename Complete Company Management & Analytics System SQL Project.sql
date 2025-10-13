@@ -16,8 +16,6 @@ CREATE TABLE Departments (
 );
 
 
-
-
 --Employees
 CREATE TABLE Employees (
     EmployeeID INT PRIMARY KEY IDENTITY(1,1),
@@ -163,6 +161,7 @@ JOIN Departments d ON e.DepartmentID = d.DepartmentID;
 -- Products in inventory
 SELECT * FROM Inventory;
 
+    
 --Intermediate Queries
 -- Top 3 highest salaries in each department
 
@@ -222,6 +221,7 @@ JOIN Employees e ON s.EmployeeID = e.EmployeeID
 GROUP BY e.FirstName, e.LastName;
 
 
+    
 -- High performers (salary above department average)
 WITH DeptAvg AS (
     SELECT DepartmentID, AVG(Salary) AS AvgSalary
@@ -269,6 +269,7 @@ BEGIN
 END
 
 
+    
 
 --6. Trigger
 -- Trigger to log salary changes
