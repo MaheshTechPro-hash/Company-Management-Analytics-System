@@ -178,6 +178,7 @@ WHERE RankSalary <=3;
 
 
 -- Employees with multiple projects
+
 SELECT e.FirstName, e.LastName, COUNT(ep.ProjectID) AS ProjectCount
 FROM EmployeeProjects ep
 JOIN Employees e ON ep.EmployeeID = e.EmployeeID
@@ -188,6 +189,7 @@ HAVING COUNT(ep.ProjectID) >1;
 
 
 -- Total sales by employee
+
 SELECT e.FirstName, e.LastName, SUM(s.Amount) AS TotalSales
 FROM Sales s
 JOIN Employees e ON s.EmployeeID = e.EmployeeID
@@ -196,6 +198,7 @@ GROUP BY e.FirstName, e.LastName;
 
 
 -- Average salary per department
+
 SELECT d.DepartmentName, AVG(e.Salary) AS AvgSalary
 FROM Employees e
 JOIN Departments d ON e.DepartmentID = d.DepartmentID
@@ -205,6 +208,7 @@ GROUP BY d.DepartmentName;
 
 --Advanced Queries
 -- Employees not assigned to any project
+
 SELECT e.FirstName, e.LastName
 FROM Employees e
 LEFT JOIN EmployeeProjects ep ON e.EmployeeID = ep.EmployeeID
@@ -214,6 +218,7 @@ WHERE ep.ProjectID IS NULL;
 
 
 -- Employee ranking by sales
+
 SELECT e.FirstName, e.LastName, SUM(s.Amount) AS TotalSales,
 RANK() OVER(ORDER BY SUM(s.Amount) DESC) AS SalesRank
 FROM Sales s
@@ -223,6 +228,7 @@ GROUP BY e.FirstName, e.LastName;
 
     
 -- High performers (salary above department average)
+
 WITH DeptAvg AS (
     SELECT DepartmentID, AVG(Salary) AS AvgSalary
     FROM Employees
@@ -238,6 +244,7 @@ WHERE e.Salary > da.AvgSalary;
 
 --4. Views
 -- View for employee performance
+
 CREATE VIEW EmployeePerformance AS
 SELECT e.FirstName, e.LastName, d.DepartmentName, e.Salary,
        ISNULL(SUM(s.Amount),0) AS TotalSales,
@@ -254,6 +261,7 @@ GROUP BY e.FirstName, e.LastName, d.DepartmentName, e.Salary;
     
 --5. Stored Procedure
 -- Add new employee
+
 CREATE PROCEDURE AddEmployee
     @FirstName VARCHAR(50),
     @LastName VARCHAR(50),
@@ -273,6 +281,7 @@ END
 
 --6. Trigger
 -- Trigger to log salary changes
+
 CREATE TABLE SalaryLog (
     LogID INT PRIMARY KEY IDENTITY(1,1),
     EmployeeID INT,
@@ -301,6 +310,7 @@ END
 
 --7. Functions
 -- Calculate employee tenure in years
+
 CREATE FUNCTION dbo.GetTenure(@HireDate DATE)
 RETURNS INT
 AS
