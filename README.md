@@ -20,6 +20,8 @@ It covers basic to advanced SQL concepts, including:
 
 The goal is to provide a comprehensive SQL learning project that simulates real-world company management.
 
+
+
 🧩 Database Schema
 
 • Departments – Stores department details
@@ -33,6 +35,8 @@ The goal is to provide a comprehensive SQL learning project that simulates real-
 • Sales – Records sales transactions per employee
 
 • Inventory – Tracks product stock and pricing
+
+
 
 🧮 Sample Data
 
@@ -65,15 +69,21 @@ Sample data is inserted for all tables — departments, employees, projects, sal
 
 • Employees earning above department average
 
+
+
 👁️ Views
  *EmployeePerformance
 
 Displays performance summary with department, salary, total sales, and project contribution.
 
+
+
 ⚙️ Stored Procedure
   *AddEmployee
 
 Inserts a new employee record dynamically into the Employees table.
+
+
 
 🧾 Trigger
   *trgSalaryChange
