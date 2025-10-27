@@ -8,7 +8,6 @@ Departments */
 
 
 
-
 CREATE TABLE Departments (
     DepartmentID INT PRIMARY KEY IDENTITY(1,1),
     DepartmentName VARCHAR(50) NOT NULL,
@@ -55,8 +54,6 @@ CREATE TABLE EmployeeProjects (
     FOREIGN KEY(ProjectID) REFERENCES Projects(ProjectID)
 );
 select * FROM EmployeeProjects
-
-
 
 
 
