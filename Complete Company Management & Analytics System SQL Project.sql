@@ -7,12 +7,12 @@ This project manages employees, departments, projects, sales, and inventory. It 
 Departments */
 
 
+
 CREATE TABLE Departments (
     DepartmentID INT PRIMARY KEY IDENTITY(1,1),
     DepartmentName VARCHAR(50) NOT NULL,
     Location VARCHAR(50)
 );
-
 
 
 --Employees
