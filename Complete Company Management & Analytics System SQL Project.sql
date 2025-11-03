@@ -120,15 +120,9 @@ INSERT INTO EmployeeProjects (EmployeeID, ProjectID, ContributionPercent) VALUES
 
 
 
-
-
-
-
 -- Sales
 INSERT INTO Sales (EmployeeID, SaleDate, ProductName, Amount) VALUES
 (5,'2023-03-10','Product A',50000),(5,'2023-03-15','Product B',70000);
-
-
 
 
 -- Inventory
