@@ -43,7 +43,6 @@ CREATE TABLE Projects (
 
 
 
-
 --EmployeeProjects (Many-to-Many)
 CREATE TABLE EmployeeProjects (
     EmployeeID INT,
